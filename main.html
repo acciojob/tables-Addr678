@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Bootstrap Table Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Item 1</td>
+        <td>$10</td>
+        <td>2</td>
+        <td>$20</td>
+      </tr>
+      <tr>
+        <td>Item 2</td>
+        <td>$15</td>
+        <td>3</td>
+        <td>$45</td>
+      </tr>
+      <tr>
+        <td>Item 3</td>
+        <td>$5</td>
+        <td>4</td>
+        <td>$20</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" class="text-end fw-bold">Total:</td>
+        <td id="total" class="font-monospace text-end fw-bold">$85</td>
+      </tr>
+    </tfoot>
+  </table>
 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
